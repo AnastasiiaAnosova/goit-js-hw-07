@@ -50,7 +50,6 @@ const instance = basicLightbox.create(`<img/>`, {
 
 function showImg(event) {
     event.preventDefault();
-    // console.dir(instance.element());
     instance.element().querySelector('img').src = event.target.dataset.source;
     instance.show();
 }
